@@ -31,10 +31,10 @@ export default class MasterLoading extends Component {
 
         <i className="huge icons">
           <i className="big loading global__color-gold circle notched icon"></i>
-          <i className="suitcase teal icon"></i>
+          <i className="pencil alternate teal icon"></i>
         </i>
         <Header as='h2'>
-            Green's Diary
+            Shortery
           <Header.Subheader>
             Loading...
           </Header.Subheader>

@@ -22,7 +22,7 @@ export default class ManageUsers extends Component {
           </List.Content>
           <Image avatar src={Faker.image.avatar()}/>
           <List.Content>
-            Lena
+            Neil Gaiman
           </List.Content>
         </List.Item>
         <List.Item>
@@ -31,7 +31,7 @@ export default class ManageUsers extends Component {
           </List.Content>
           <Image avatar src={Faker.image.avatar()}/>
           <List.Content>
-            Lindsay
+            Ernest Hemingway
           </List.Content>
         </List.Item>
         <List.Item>
@@ -40,7 +40,7 @@ export default class ManageUsers extends Component {
           </List.Content>
           <Image avatar src={Faker.image.avatar()}/>
           <List.Content>
-            Mark
+            Dr. Suess
           </List.Content>
         </List.Item>
         <List.Item>
@@ -49,7 +49,7 @@ export default class ManageUsers extends Component {
           </List.Content>
           <Image avatar src={Faker.image.avatar()}/>
           <List.Content>
-            Molly
+            Edgar Allan Poe
           </List.Content>
         </List.Item>
       </List>

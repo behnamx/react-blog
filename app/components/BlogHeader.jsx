@@ -12,9 +12,9 @@ export default class BlogHeader extends Component {
   render() {
     return (
       <Header as='h2' icon textAlign='center' color="green">
-        <NavLink to='/' style={{color:"#21ba45"}}>  <Icon name='suitcase' circular/></NavLink>
+        <NavLink to='/' style={{color:"#21ba45"}}>  <Icon name='pencil alternate' circular/></NavLink>
         <Header.Content>
-      <NavLink to='/' style={{color:"#21ba45"}}>  Green's Diary </NavLink>
+      <NavLink to='/' style={{color:"#21ba45"}}>  Shortery </NavLink>
         </Header.Content>
         <Header.Subheader>
 

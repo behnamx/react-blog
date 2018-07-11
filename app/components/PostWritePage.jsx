@@ -30,8 +30,8 @@ export class PostWritePage extends Component {
 
     this.state = {
       videoState:false,
-      body:'',
-      image: ''
+      body: null,
+      image: null
 
 
     };
@@ -100,6 +100,7 @@ export class PostWritePage extends Component {
     var {dispatch} = this.props
     var imageURL = this.state.image
     var tags = PostAPI.getContentTags(this.state.body)
+    console.log('Add post in postwritepage handleform');
     if (imageURL !== '') {
     this.props.addPost({
         body : this.state.body,
@@ -113,6 +114,7 @@ export class PostWritePage extends Component {
     this.props.addPost({
       body : this.state.body,
       tags : tags,
+      image: null,
       avatar: this.props.avatar,
       name: this.props.name
     },this.close)
@@ -160,8 +162,11 @@ export class PostWritePage extends Component {
                  </Card.Header>
                  <Divider hidden/>
                  <Card.Description>
-                   <textarea name='body' value={this.state.body} onChange={this.handleInputChange} autoFocus='true' placeholder="What's new with you?"></textarea>
-                   </Card.Description>
+                  <textarea name='body' value={this.state.body} 
+                    onChange={this.handleInputChange} autoFocus='true' 
+                    placeholder="Write a story?">
+                  </textarea>
+                </Card.Description>
                </Card.Content>
                <Card.Content extra>
                  <Menu icon compact borderless>

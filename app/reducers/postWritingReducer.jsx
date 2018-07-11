@@ -12,6 +12,11 @@ var defaultState = {
 
 // - Post writing reducer
 export var postWritingReducer = (state = defaultState, action) => {
+
+  console.log("What is action.writeStatus: ");
+  console.log(action.writeStatus);
+  console.log("What is action.writeStatus end: ");
+
   switch (action.type) {
     case types.OPEN_POST_WRITE_PAGE:
       return {

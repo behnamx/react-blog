@@ -17,6 +17,9 @@ import {
   Popup
 } from 'semantic-ui-react'
 
+import * as postReadingActions from 'postReadingActions'
+import PostReadPage from 'PostReadPage'
+
 
 
 // - Import app components
@@ -51,6 +54,7 @@ export class Post extends Component {
         readMoreState: true
 
         });
+      this.props.dispatch(postReadingActions.openPostReadPage(true))
     }
   }
 
@@ -82,13 +86,15 @@ export class Post extends Component {
 
 
         <Card.Content>
+        <PostReadPage />
+
           <Card.Header>
 
             <div className="post__avatar" style={avatarStyle}></div>
             {' '}<div className="post__meta">
               <span className="post__avatar-title">{this.props.ownerDisplayName}{'  '}</span>
-              <span className="post__public-status"> > Public </span>
-              <Icon name="world"/>
+              <span className="post__public-status"> > Private </span>
+              <Icon name="lock"/>
 
             </div>
 
@@ -116,7 +122,7 @@ export class Post extends Component {
             {this.state.text}
 
               <Popup
-           trigger={<Icon name='ellipsis horizontal' style={{cursor: 'pointer'}} color='teal' size='big' onClick={this.handleReadMore}/>}
+           trigger={<Icon name='book' style={{cursor: 'pointer'}} color='teal' size='big' onClick={this.handleReadMore}/>}
            content='Read more...'
            position='right center'
            size='tiny'
@@ -126,17 +132,16 @@ export class Post extends Component {
         </Card.Content>
         <Card.Content extra className="attached">
           <Menu secondary>
-            <Button color='red' icon='heart' labelPosition='right' label={{
+            <Button  icon='trophy' labelPosition='right' label={{
               basic: true,
-              color: 'red',
               pointing: 'left',
               content: '248'
             }}/>
 
             <Menu.Menu position="right">
-              <Button color='grey' icon='comment' labelPosition='right' label={{
+              <Button icon='comment' labelPosition='right' label={{
+                color: 'white',
                 basic: true,
-                color: 'grey',
                 pointing: 'left',
                 content: '24'
               }}/>
@@ -154,6 +159,8 @@ export class Post extends Component {
 
 export default connect((state) => {
   return{
-    avatar: state.user.avatar
+    avatar: state.user.avatar,
+    postReadState: state.postReading.readStatus
+
   }
 })(Post)

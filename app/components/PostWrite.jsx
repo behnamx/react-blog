@@ -47,7 +47,6 @@ export class PostWrite extends Component {
   // Render app DOM
   render() {
 
-
       // - Define variables
       const avatarImage = this.props.avatar
       const avatarStyle = {
@@ -60,7 +59,7 @@ export class PostWrite extends Component {
         <div onClick={this.handlePostWrite} style={{
           cursor: 'pointer'
         }}>
-          <span className='global__color-lightGrey'>What's new with you?</span>
+          <span className='global__color-lightGrey'>Write a story?</span>
           <Icon link name='write' color='grey' size='large' circular style={{
             marginLeft: '5px'
           }}/>

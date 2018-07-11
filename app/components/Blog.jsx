@@ -12,6 +12,7 @@ import PopularPosts from 'PopularPosts'
 import Tags from 'Tags'
 import PostWrite from 'PostWrite'
 
+
 // - Import API
 import * as AuthAPI from 'AuthAPI'
 
@@ -35,8 +36,8 @@ export class Blog extends Component {
         return (
           <Grid.Column>
           <Message
-                  icon='inbox'
-                  content='Nothing has shared.'
+                  icon='book'
+                  content='No Public Stories Available'
                 />
             </Grid.Column>
             )
@@ -97,7 +98,8 @@ export class Blog extends Component {
 export default withRouter(connect(
   (state) => {
     return{
-      posts: state.post
+      posts: state.post,
+      postReadState: state.postReading.readStatus
 
     }
 

@@ -12,6 +12,8 @@ try {
 
 }
 
+console.log(process.env.API_KEY);
+
 module.exports = {
   entry: [
     'react-image-gallery/styles/scss/image-gallery.scss',

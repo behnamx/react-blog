@@ -10,47 +10,47 @@ export class PopularPosts extends Component {
   // Render DOM
   render() {
     return (
-      <Card fluid>
-        <Card.Content>
-          <Card.Header>
-            Popular Posts
-          </Card.Header>
-        </Card.Content>
-        <Card.Content>
-          <Item.Group>
-            <Item>
-              <Item.Image size='tiny' src={Faker.image.nature()} />
+  <Card fluid>
+    <Card.Content>
+      <Card.Header>
+        Popular Stories
+      </Card.Header>
+    </Card.Content>
+    <Card.Content>
+      <Item.Group>
+        <Item>
+          <Item.Image size='tiny' src='https://s3.amazonaws.com/uifaces/faces/twitter/YoungCutlass/128.jpg' />
 
-              <Item.Content>
-                <Item.Header>{this.props.name}</Item.Header>
-                <Item.Meta content='1 month ago' />
-                <Item.Description>{Faker.lorem.sentence()}</Item.Description>
-              </Item.Content>
-            </Item>
+          <Item.Content>
+            <Item.Header>{this.props.name}</Item.Header>
+            <Item.Meta content='1 month ago' />
+            <Item.Description>Ice Cream Story</Item.Description>
+          </Item.Content>
+        </Item>
 
-    <Item>
-      <Item.Image size='tiny' src={Faker.image.nature()} />
+        <Item>
+          <Item.Image size='tiny' src='https://s3.amazonaws.com/uifaces/faces/twitter/YoungCutlass/128.jpg' />
 
-      <Item.Content>
-        <Item.Header>{this.props.name}</Item.Header>
-        <Item.Meta content='2 days ago' />
-        <Item.Description>{Faker.lorem.sentence()}</Item.Description>
-      </Item.Content>
-    </Item>
+          <Item.Content>
+            <Item.Header>{this.props.name}</Item.Header>
+            <Item.Meta content='2 days ago' />
+            <Item.Description>Chocolate Factory Story</Item.Description>
+          </Item.Content>
+        </Item>
 
-    <Item>
-      <Item.Image size='tiny' src={Faker.image.nature()} />
+        <Item>
+          <Item.Image size='tiny' src='https://s3.amazonaws.com/uifaces/faces/twitter/YoungCutlass/128.jpg' />
 
-      <Item.Content>
-        <Item.Header>{this.props.name}</Item.Header>
-        <Item.Meta content='6 days ago' />
-        <Item.Description>{Faker.lorem.sentence()}</Item.Description>
-      </Item.Content>
-    </Item>
+          <Item.Content>
+            <Item.Header>{this.props.name}</Item.Header>
+            <Item.Meta content='6 days ago' />
+            <Item.Description>Surf Story</Item.Description>
+          </Item.Content>
+        </Item>
 
-  </Item.Group>
-        </Card.Content>
-      </Card>
+      </Item.Group>
+    </Card.Content>
+  </Card>
     )
   }
 }

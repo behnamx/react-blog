@@ -9,6 +9,7 @@ import {createLogger} from 'redux-logger';
 import {imageGalleryReducer} from 'imageGalleryReducer'
 import {imageUploaderReducer} from 'imageUploaderReducer'
 import {postWritingReducer} from 'postWritingReducer'
+import {postReadingReducer} from 'postReadingReducer'
 import {postReducer} from 'postReducer'
 import {commentReducer} from 'commentReducer'
 import {authorizeReducer} from 'authorizeReducer'
@@ -27,6 +28,7 @@ const logger = createLogger()
 var reducer = redux.combineReducers({
   imageGallery: imageGalleryReducer,
   postWriting: postWritingReducer,
+  postReading: postReadingReducer,
   imageUploader: imageUploaderReducer,
   post: postReducer,
   comment: commentReducer,

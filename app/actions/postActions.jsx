@@ -16,6 +16,9 @@ import * as postWritingActions from 'postWritingActions'
 
 // - Clea all data in post store
 export const clearAllData = () => {
+
+  console.log("clear data");
+
   return{
     type: types.CLEAR_ALL_DATA_POST
   }
@@ -23,6 +26,9 @@ export const clearAllData = () => {
 
 // - Add a post with image
 export const addImagePost = (post) => {
+
+  console.log("image post");
+
   return{
     type: types.ADD_IMAGE_POST,
     post
@@ -32,6 +38,9 @@ export const addImagePost = (post) => {
 
 // - Add a normal post
 export var dbAddPost = (newPost,callBack) => {
+
+  console.log("normal post");
+
   return(dispatch,getState) => {
 
     var uid = getState().authorize.uid
@@ -66,6 +75,9 @@ export var dbAddPost = (newPost,callBack) => {
 }
 
 export const addVideoPost = (post) => {
+
+  console.log("video post");
+
   return{
     type: types.ADD_VIDEO_POST,
     post
@@ -74,6 +86,9 @@ export const addVideoPost = (post) => {
 
 // - Add a normal post
   export const addPost = (post) => {
+
+    console.log("normal post 2");
+
     return{
       type: types.ADD_POST,
       post
@@ -82,6 +97,9 @@ export const addVideoPost = (post) => {
 
 // - Add a post with image
  export const dbAddImagePost = (newPost,callBack) => {
+
+  console.log("image post 2");
+
    return(dispatch,getState) => {
      var uid = getState().authorize.uid
      var post = {
@@ -120,6 +138,9 @@ export const addVideoPost = (post) => {
 
 // - Add a list of post
 export const addPosts = (posts) => {
+
+  console.log("list of posts");
+
   return {
     type: types.ADD_LIST_POST,
     posts
@@ -130,6 +151,9 @@ export const addPosts = (posts) => {
 
  // - Read all user posts from data base
  export const dbGetPosts = () => {
+
+  console.log("get all post ");
+
    return (dispatch, getState) => {
      var uid = getState().authorize.uid
      if (uid) {

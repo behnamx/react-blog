@@ -93,7 +93,6 @@ var {dispatch} = this.props
             this.props.defaultDataDisable()
             this.props.clearData()
           }
-            this.props.loadDataGuest()
         }
       })
 
@@ -162,9 +161,6 @@ const mapDispatchToProps = (dispatch,ownProps) => {
     },
     closeMessage: () => {
       dispatch(globalActions.hideMessage())
-    },
-    loadDataGuest: () => {
-      dispatch(globalActions.loadDataGuest())
     }
 
   }

@@ -15,16 +15,16 @@ export default class Tags extends Component {
         <Segment attached>
           <Label.Group color='teal'>
             <Label as='a'>
-              Happy
+              Romantic
               <Label.Detail>22</Label.Detail>
             </Label>
-            <Label as='a'>Smart
+            <Label as='a'>Historic
               <Label.Detail>3</Label.Detail>
             </Label>
-            <Label as='a'>Insane
+            <Label as='a'>WW2
               <Label.Detail>10</Label.Detail>
             </Label>
-            <Label as='a'>Exciting
+            <Label as='a'>California
               <Label.Detail>19</Label.Detail>
             </Label>
           </Label.Group>

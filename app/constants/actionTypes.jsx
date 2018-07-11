@@ -6,6 +6,10 @@ export const TAGS_POST_WRITE = 'TAGS_POST_WRITE'
 export const TYPE_POST_WRITE = 'TYPE_POST_WRITE'
 export const CLEAN_POST_WRITE_PAGE = 'CLEAN_POST_WRITE_PAGE'
 
+/* post reading actions */
+export const OPEN_POST_READ_PAGE = 'OPEN_POST_READ_PAGE'
+
+
 /* post actions */
 export const ADD_IMAGE_POST = 'ADD_IMAGE_POST'
 export const ADD_VIDEO_POST = 'ADD_VIDEO_POST'
